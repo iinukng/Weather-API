@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="./assets/css/style.css">
+<title>Weather Dashboard</title>
 </head>
+
 <body>
-    
+    <div class="jumbotron-fluid bg-dark text-light text-center">
+        <h1>Weather Dashboard</h1>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2">
+                <h4>Search for a City</h4>
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <div class="input-group-append">
+                        <button class=" btn bg-primary text-light"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                
+                <ul class="list-group"></ul>
+
+            </div>   
+            <div class="col-sm-8">
+                <div class="row m-2 border">
+                    <div class="col-12">
+                        <h3 class="city"></h3>
+                        <p>Temp<span class="current"></span></p>
+                        <p>Wind<span class="current"></span></p> 
+                        <p>Humidity<span class="current"></span></p>
+                        <p>UV index<span class="current"></span></p> 
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <h3>5 Day Forecast</h3>
+                    <div class="row text-light">
+                        <div class="col-sm-2 bg-primary text-white m-2" >
+                            <p></p>
+                            <p></p>
+                            <p>Temp:<span></span></p>
+                            <p>Humidity:<span></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary text-white m-2" >
+                            <p></p>
+                            <p></p>
+                            <p>Temp:<span></span></p>
+                            <p>Humidity:<span></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary text-white m-2">
+                            <p></p>
+                            <p></p>
+                            <p>Temp:<span></span></p>
+                            <p>Humidity:<span></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary text-white m-2">
+                            <p></p>
+                            <p></p>
+                            <p>Temp:<span></span></p>
+                            <p>Humidity:<span></span></p>
+                        </div>
+                        <div class="col-sm-2 bg-primary text-white m-2" >
+                            <p></p>
+                            <p></p>
+                            <p>Temp:<span></span></p>
+                            <p>Humidity:<span></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
