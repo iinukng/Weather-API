@@ -11,67 +11,70 @@
 </head>
 
 <body>
+    <!--jumbotron -->
     <div class="jumbotron-fluid bg-dark text-light text-center">
         <h1>Weather Dashboard</h1>
     </div>
 
     <div class="container-fluid">
+        <!-- search -->
         <div class="row">
             <div class="col-sm-2">
                 <h4>Search for a City</h4>
                 <div class="input-group">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" id="search-cities">
                     <div class="input-group-append">
-                        <button class=" btn bg-primary text-light"><i class="fa fa-search"></i></button>
+                        <button class=" btn bg-primary text-light" id="search-btn"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <ul class="list-group"></ul>
+            </div>   
+
+            <!-- main display -->
+            <div class="col-sm-8">
+                <div class="row ml-2 border">
+                    <div class="col-sm-12">
+                        <h3 class="city-name"></h3>
+                        <p>Temp<span class="current" id="temp"></span></p>
+                        <p>Wind<span class="current" id="wind"></span></p> 
+                        <p>Humidity<span class="current" id="humidity"></span></p>
+                        <p>UV index<span class="current bg-danger text-white" id="uv-index"></span></p> 
                     </div>
                 </div>
                 
-                <ul class="list-group"></ul>
-
-            </div>   
-            <div class="col-sm-8">
-                <div class="row m-2 border">
-                    <div class="col-12">
-                        <h3 class="city"></h3>
-                        <p>Temp<span class="current"></span></p>
-                        <p>Wind<span class="current"></span></p> 
-                        <p>Humidity<span class="current"></span></p>
-                        <p>UV index<span class="current"></span></p> 
-                    </div>
-                </div>
-
+                <!-- forecast -->
                 <div class="col-sm-12">
-                    <h3>5 Day Forecast</h3>
+                    <h3>5-Day Forecast:</h3>
                     <div class="row text-light">
-                        <div class="col-sm-2 bg-primary text-white m-2" >
-                            <p></p>
-                            <p></p>
-                            <p>Temp:<span></span></p>
-                            <p>Humidity:<span></span></p>
+                        <div class="col-sm-2 bg-primary forecast text-white m-2" >
+                            <p id="Date0"></p>
+                            <p id="Img0"></p>
+                            <p>Temp:<span id="iTemp0"></span></p>
+                            <p>Humidity:<span id="iHumidity0"></span></p>
                         </div>
-                        <div class="col-sm-2 bg-primary text-white m-2" >
-                            <p></p>
-                            <p></p>
-                            <p>Temp:<span></span></p>
-                            <p>Humidity:<span></span></p>
+                        <div class="col-sm-2 bg-primary forecast text-white m-2" >
+                            <p id="Date1"></p>
+                            <p id="Img1"></p>
+                            <p>Temp:<span id="iTemp1"></span></p>
+                            <p>Humidity:<span id="iHumidity1"></span></p>
                         </div>
-                        <div class="col-sm-2 bg-primary text-white m-2">
-                            <p></p>
-                            <p></p>
-                            <p>Temp:<span></span></p>
-                            <p>Humidity:<span></span></p>
+                        <div class="col-sm-2 bg-primary forecast text-white m-2">
+                            <p id="Date2"></p>
+                            <p id="Img2"></p>
+                            <p>Temp:<span id="iTemp2"></span></p>
+                            <p>Humidity:<span id="iHumidity2"></span></p>
                         </div>
-                        <div class="col-sm-2 bg-primary text-white m-2">
-                            <p></p>
-                            <p></p>
-                            <p>Temp:<span></span></p>
-                            <p>Humidity:<span></span></p>
+                        <div class="col-sm-2 bg-primary forecast text-white m-2">
+                            <p id="Date3"></p>
+                            <p id="Img3"></p>
+                            <p>Temp:<span id="iTemp3"></span></p>
+                            <p>Humidity:<span id="iHumidity3"></span></p>
                         </div>
-                        <div class="col-sm-2 bg-primary text-white m-2" >
-                            <p></p>
-                            <p></p>
-                            <p>Temp:<span></span></p>
-                            <p>Humidity:<span></span></p>
+                        <div class="col-sm-2 bg-primary forecast text-white m-2" >
+                            <p id="Date4"></p>
+                            <p id="Img4"></p>
+                            <p>Temp:<span id="iTemp4"></span></p>
+                            <p>Humidity:<span id="iHumidity4"></span></p>
                         </div>
                     </div>
                 </div>
@@ -79,7 +82,7 @@
         </div>
     </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 <script src="./assets/js/script.js"></script>
