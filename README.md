@@ -13,6 +13,7 @@ After entering the desired city, the bottom of the search bar will show your cit
 
 ## Webpage 
 
-Deployed Application!
+Deployed Application: https://iinukng.github.io/Weather-API/
 
-[](assets/images/weather%20api.PNG)
+
+![](assets/images/weather.PNG)
